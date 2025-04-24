@@ -1,0 +1,4 @@
+pandas==2.2.3
+dash==3.0.3
+plotly==6.0.1
+dash_bootstrap_components==2.0.2
