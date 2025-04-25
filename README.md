@@ -1,6 +1,6 @@
 ## Projeto: Análise de Fatores de Risco de Inadimplência de Crédito
 
-Este projeto tem como objetivo identificar fatores que influenciam o risco de inadimplência de clientes, com foco em variáveis comportamentais e socioeconômicas. A análise busca apoiar estratégias de mitigação de risco e melhoria no relacionamento com o cliente.
+Este projeto tem como objetivo identificar fatores que influenciam o risco de inadimplência de clientes, com foco em variáveis comportamentais e socioeconômicas. A análise busca apoiar estratégias de mitigação de risco e melhoria no relacionamento com o cliente. Foi realizado um deploy dos gráficos com as variáveis que influenciam o risco de inadimplência, vide o painel interativo disponível para visualização dos resultados e insights obtidos.
 
 ## Sobre os Dados
 O conjunto de dados analisado contém informações de clientes como:
@@ -9,7 +9,7 @@ Demográficos e socioeconômicos: sexo, idade, estado civil, escolaridade, núme
 
 Comportamentais: quantidade e valor de transações, portfólio de produtos, interações com canais da empresa, meses de inatividade.
 
-## 🔎 Métodos Estatísticos Utilizados
+## 🔎 Métodos de Análise Aplicados
 
 ### 📌 Correlação de Pearson
 
@@ -39,19 +39,20 @@ Positivo: ambos os fatores aumentam juntos.
 
 Negativo: quando um aumenta, o outro tende a diminuir.
 
-### 📌 Boxplot
-Boxplot utilizado para explorar a dispersão dos dados e identificar possíveis outliers. Ele se baseia nos quartis:
+### 📌 Gráfico Boxplot
 
-Q1 (1º quartil): 25% dos menores valores
+Identifica a dispersão dos dados. Apresenta a mediana, linha central dentro da caixa. E apresenta possíveis outliers, pontos fora da caixa que indicam comportamentos atípicos- por exemplo, clientes com uso excessivo de crédito ou movimentação fora do perfil usual. Se baseia nos quartis:
 
-Q2 (mediana): valor central
+Q1: 25% dos menores valores
 
-Q3 (3º quartil): 75% dos valores
+Q2: mediana, valor central
 
-A mediana é representada por uma linha central dentro da caixa. Os outliers são marcados como pontos fora da caixa e podem indicar comportamentos atípicos — por exemplo, clientes com uso excessivo de crédito ou movimentações fora do perfil usual.
+Q3: 75% dos valores
 
-### 📌 FacetGrid
-FacetGrid compara variáveis entre diferentes subgrupos. Permite observar tendências específicas em categorias distintas (como sexo, escolaridade ou faixa etária), facilitando uma análise visual comparativa entre adimplentes e inadimplentes.
+
+### 📌 Gráfico FacetGrid
+
+Compara variáveis entre diferentes subgrupos. Permite observar tendências específicas em categorias distintas, facilitando uma análise visual comparativa entre adimplentes e inadimplentes.
 
 ## 🔎 Análise Exploratória
 
@@ -66,6 +67,7 @@ Permitem uma análise equilibrada e confiável.
 Apresentam distribuição enviesada, exigindo cautela em inferências.
 
 ### Correlação com o Risco de Inadimplência
+
 - Fatores com correlação fraca, porém presente: qtd_transacoes_12m, valor_transacoes_12m, qtd_produtos, iteracoes_12m, meses_inativo_12m
 
 Interpretação: Fatores de engajamento com o banco demonstram alguma influência sobre a inadimplência, ainda que com correlação fraca.
@@ -74,14 +76,14 @@ Interpretação: Fatores de engajamento com o banco demonstram alguma influênci
 
 Interpretação: Fatores demográficos não explicam bem o risco de inadimplência de forma isolada.
 
-## Principais Resultados Gráficos
+## Principais Resultados
+
 - Clientes inadimplentes realizam menos transações e com menor valor médio (~R$2.500).
 
 - Possuem menos produtos contratados quando comparado aos adimplentes (média 3 versus 4).
 
 - Apesar de interagirem mais com os canais, as interações estão associadas a baixo volume financeiro (~R$10.000/ano).
 
-- É possível interagir com gráficos através do link: 
 
 ## Conclusão
 O perfil de risco de inadimplência está mais relacionado a comportamentos operacionais e de consumo do que a fatores socioeconômicos. Estratégias de monitoramento e prevenção devem:
