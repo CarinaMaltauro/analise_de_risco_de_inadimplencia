@@ -8,6 +8,7 @@ df = pd.read_csv("dados_tratados.csv", sep=";")
 
 # Inicializar app com tema escuro do Bootstrap
 app = Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
+server = app.server  
 
 # Opções para os gráficos
 opcoes_boxplot = {
@@ -48,6 +49,7 @@ app.layout = dbc.Container([
             html.Label("Escolha a Relação:", className="text-light"),
             dcc.Dropdown(
                 id='relacao_grafico',
+                placeholder="Selecione uma relação...",
                 style={
                     "backgroundColor": "#2c2c2c",
                     "color": "white",
@@ -90,6 +92,9 @@ def atualizar_relacoes(tipo):
     Input('relacao_grafico', 'value')
 )
 def atualizar_grafico(tipo, relacao):
+     if relacao is None:
+        return px.scatter(template='plotly_dark')
+         
     if tipo == 'boxplot':
         fig = px.box(df, x='default', y=relacao, color='default', template='plotly_dark')
         fig.update_layout(title=f"Distribuição de {relacao} por Default")
