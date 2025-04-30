@@ -1,6 +1,6 @@
 ## Projeto: Análise de Fatores de Risco de Inadimplência de Crédito
 
-Este projeto tem como objetivo identificar fatores que influenciam o risco de inadimplência de clientes, com foco em variáveis comportamentais e socioeconômicas. A análise busca apoiar estratégias de mitigação de risco e melhoria no relacionamento com o cliente. Para melhor observação dos resultados e insights obtidos, foi criado um painel interativo com os gráficos com as variáveis que influenciam o risco de inadimpência https://aplicativodash-9e7d08e1a8ef.herokuapp.com/
+Este projeto tem como objetivo identificar fatores que influenciam o risco de inadimplência de clientes, com foco em variáveis comportamentais e socioeconômicas. A análise busca apoiar estratégias de mitigação de risco e melhoria no relacionamento com o cliente. Para melhor observação dos resultados e insights obtidos, foi criado um painel interativo no servidor da Heroku com os gráficos com as variáveis que influenciam o risco de inadimpência https://aplicativodash-9e7d08e1a8ef.herokuapp.com/
 
 ## Sobre os Dados
 O conjunto de dados analisado contém informações de clientes como:
