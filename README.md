@@ -1,3 +1,20 @@
+## Licença
+Este projeto está licenciado sob a Licença Apache 2.0.
+
+## Atribuição obrigatória
+De acordo com os termos da licença Apache 2.0, qualquer pessoa que reutilizar este código (total ou parcialmente) deve incluir atribuição ao autor original:
+
+Código criado por @CarinaMaltauro
+
+A atribuição pode ser feita:
+
+Nos arquivos de código (comentários)
+
+Na documentação do projeto derivado
+
+Ou em qualquer local visível e apropriado
+
+
 ## Projeto: Análise de Fatores de Risco de Inadimplência de Crédito
 
 Este projeto tem como objetivo identificar fatores que influenciam o risco de inadimplência de clientes, com foco em variáveis comportamentais e socioeconômicas. A análise busca apoiar estratégias de mitigação de risco e melhoria no relacionamento com o cliente. 
